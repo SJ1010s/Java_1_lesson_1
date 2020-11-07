@@ -9,13 +9,15 @@ public class Main {
         String[] word = getWord(morse);
         String[][] letters = getLetters(word);
 
-        String decodeText = "";
+       // String decodeText = "";
+        StringBuilder decodeText = new StringBuilder("");
         for (int i = 0; i<letters.length;i++){
             for (int j = 0; j<letters[i].length; j++){
-                decodeText = decodeText.concat(letters[i][j]);
+                decodeText.append(letters[i][j]);
+                //decodeText = decodeText.concat(letters[i][j]);
             }
         }
-        System.out.println(letters.length);
+        System.out.println(decodeText);
         printArray2(letters);
 //
 
