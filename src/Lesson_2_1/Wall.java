@@ -1,6 +1,6 @@
 package Lesson_2_1;
 
-public class Wall {
+public class Wall implements Difficults {
 
     private String name;
     private int height;
