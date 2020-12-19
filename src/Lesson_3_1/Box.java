@@ -1,17 +1,15 @@
 package Lesson_3_1;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class Box implements Comparable<Box> {
-    private Apple apple;
+public class Box <T extends Fruit> {
+    private List<T> fruit;
 
 
-    public Box(Apple apple) {
-        this.apple = apple;
+    public Box(T ... fruit) {
+        this.fruit = new ArrayList(Arrays.asList(fruit));
     }
 
-    @Override
-    public int compareTo(Box o) {
-        return 0;
-    }
 }
