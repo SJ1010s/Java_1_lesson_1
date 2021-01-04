@@ -12,4 +12,5 @@ public class Box <T extends Fruit> {
         this.fruit = new ArrayList(Arrays.asList(fruit));
     }
 
+
 }
