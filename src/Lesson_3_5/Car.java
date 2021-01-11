@@ -40,6 +40,8 @@ public class Car implements Runnable {
             Thread.sleep(500 + (int)(Math.random() * 800));
             System.out.println(this.name + " готов");
     //============//
+            //2) start и finish уже атомик(встроенная синхронизация), синхранизация для него не нужна. lock вообще лишнее в решении
+            //- а в остальном все класно
             cycBarrier.await();
            try {
                lock.lock();
