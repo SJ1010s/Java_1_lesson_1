@@ -22,7 +22,7 @@ public class Main {
 
 
 
-        Box<Apple> BoxApple = new Box<Apple>(apple1, apple2, apple3, apple4);
+//        Box<Apple> BoxApple = new Box<Apple>(apple1, apple2, apple3, apple4);
 
     }
     public static <T> List<T> arrayList(T [] arr){
